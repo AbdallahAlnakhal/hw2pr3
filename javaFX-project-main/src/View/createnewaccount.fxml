@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1024.0" style="-fx-background-color: #ddd;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="Controller.Admin.CreatenewaccountController">
+   <children>
+      <AnchorPane layoutY="2.0" prefHeight="620.0" prefWidth="207.0" styleClass="sidePar" stylesheets="@../../css/admin.css">
+         <children>
+            <Label alignment="CENTER" layoutX="23.0" layoutY="14.0" prefHeight="42.0" prefWidth="162.0" text="Admin Dashboard" textFill="#b8d9f8">
+               <effect>
+                  <Glow level="0.33" />
+               </effect>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="usersManagmentPageBtn" alignment="BASELINE_LEFT" layoutY="186.0" mnemonicParsing="false" onAction="#showUsersManagmentPage" prefHeight="49.0" prefWidth="207.0" style="-fx-background-color: #1c273c;" styleClass="sideParItemActive" stylesheets="@../../css/admin.css" text="Users">
+             
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="accountsPageBtn" alignment="BASELINE_LEFT" layoutY="235.0" mnemonicParsing="false" onAction="#showAccountsPage" prefHeight="49.0" prefWidth="207.0" style="-fx-background-color: #726bfa;" styleClass="cancelButton" stylesheets="@../../css/admin.css" text="Accounts" textFill="WHITE">
+            
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="operationsPageBtn" alignment="BASELINE_LEFT" layoutY="284.0" mnemonicParsing="false" onAction="#showOperationsPage" prefHeight="49.0" prefWidth="207.0" styleClass="sideParItem" stylesheets="@../../css/admin.css" text="Operations">
+              
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#000000b2" height="28.29" radius="36.225" width="118.61" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="299.0" layoutY="47.0" prefHeight="506.0" prefWidth="659.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+         <children>
+            <Button fx:id="Cnewaccount" layoutX="75.0" layoutY="387.0" mnemonicParsing="false" onAction="#CnewaccountBtn" prefHeight="42.0" prefWidth="118.0" styleClass="saveButton" stylesheets="@../../css/admin.css" text="Save">
+             
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelBtn" layoutX="210.0" layoutY="387.0" mnemonicParsing="false" onAction="#cancelaccountCreation" prefHeight="42.0" prefWidth="118.0" styleClass="cancelButton" stylesheets="@../../css/admin.css" text="Cancel">
+            
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="42.0" layoutY="57.0" prefHeight="42.0" prefWidth="162.0" text="userID" textFill="#383560">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userid" layoutX="236.0" layoutY="63.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+            <TextField fx:id="accnum" layoutX="236.0" layoutY="105.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+            <Label layoutX="34.0" layoutY="99.0" prefHeight="42.0" prefWidth="178.0" text="Account numbre" textFill="#383560">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="236.0" layoutY="147.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+            <Label layoutX="42.0" layoutY="141.0" prefHeight="42.0" prefWidth="162.0" text="Username" textFill="#383560">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="183.0" prefHeight="42.0" prefWidth="162.0" text="currency" textFill="#383560">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="currency" layoutX="236.0" layoutY="189.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+            <Label layoutX="42.0" layoutY="232.0" prefHeight="42.0" prefWidth="162.0" text="Balance" textFill="#383560">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="balance" layoutX="236.0" layoutY="238.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+            <Label layoutX="42.0" layoutY="283.0" prefHeight="42.0" prefWidth="162.0" text="Creation Date" textFill="#383560">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cdate" layoutX="236.0" layoutY="289.0" styleClass="textField" stylesheets="@../../css/admin.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
